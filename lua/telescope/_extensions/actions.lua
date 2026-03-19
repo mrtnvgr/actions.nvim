@@ -13,7 +13,7 @@ local function run_action(prompt_bufnr)
   actions.close(prompt_bufnr)
 
   local actions_table = me.get_actions()
-  local action_fn = actions_table[selected.action_name]
+  local action_fn = actions_table[selected.value]
   if action_fn then action_fn() end
 end
 
