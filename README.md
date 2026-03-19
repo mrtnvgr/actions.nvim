@@ -1,8 +1,6 @@
 # actions.nvim
 
-actions.nvim is an actions runner menu inspired by [REAPER](https://reaper.fm)'s "Actions" window.
-
-Currently, it's an extension for [Telescope](https://github.com/nvim-telescope/telescope.nvim).
+A searchable actions runner menu for [Neovim](https://neovim.io/), inspired by [REAPER](https://reaper.fm)'s ["Actions"](https://dt7v1i9vyp3mf.cloudfront.net/styles/news_large/s3/imagelibrary/r/reaper_0316_01-ldDVvIJ8Uwvf7m8ADF3ORNs3lnltWA1b.jpg) window. Built as a [Telescope](https://github.com/nvim-telescope/telescope.nvim) extension.
 
 ## Setup
 
