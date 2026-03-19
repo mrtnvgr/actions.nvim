@@ -7,19 +7,8 @@ Currently, it's an extension for [Telescope](https://github.com/nvim-telescope/t
 ## Setup
 
 ```lua
-require("actions").setup({
-  actions = {
-    ["Format LSP code"] = function()
-      vim.lsp.buf.format()
-    end,
-    ["Rename symbol"] = function()
-      vim.lsp.buf.rename()
-    end,
-    ["Go to definition"] = function()
-      vim.lsp.buf.definition()
-    end,
-  },
-})
+local actions = require("actions")
+actions.setup({ actions = actions.stock_actions })
 require("telescope").load_extension("actions")
 ```
 
