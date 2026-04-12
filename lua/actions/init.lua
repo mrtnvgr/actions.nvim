@@ -5,7 +5,7 @@ M._actions = {}
 function M.setup(opts)
   opts = opts or {}
 
-  M._actions = opts.actions or {}
+  M._actions = opts.actions or M.stock_actions
 end
 
 function M.get_actions()
