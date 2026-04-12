@@ -19,11 +19,11 @@ M.stock_actions = {
   end,
 
   ["[Buffer]: Show word count"] = function()
-    print("Total words: " .. (vim.fn.wordcount().words or 0))
+    vim.notify("Total words: " .. (vim.fn.wordcount().words or 0))
   end,
 
   ["[Visual selection]: Show word count"] = function()
-    print("Words in visual selection: " .. (vim.fn.wordcount().visual_words or "<no selection>"))
+    vim.notify("Words in visual selection: " .. (vim.fn.wordcount().visual_words or "<no selection>"))
   end,
 };
 
