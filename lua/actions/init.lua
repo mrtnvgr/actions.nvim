@@ -23,7 +23,10 @@ M.stock_actions = {
   end,
 
   ["[Visual selection]: Show word count"] = function()
-    vim.notify("Words in visual selection: " .. (vim.fn.wordcount().visual_words or "<no selection>"))
+    local wc = vim.fn.wordcount()
+    if wc.visual_words then
+      vim.notify("Words in visual selection: " .. wc.visual_words)
+    end
   end,
 };
 
