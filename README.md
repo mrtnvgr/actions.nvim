@@ -8,19 +8,29 @@ Supports:
 
 ## Setup
 
-### With Telescope
+#### Stock actions
 
 ```lua
-local actions = require("actions")
-actions.setup({ actions = actions.stock_actions })
+require("actions").setup()
+```
+
+#### Custom actions
+
+```lua
+require("actions").setup({ actions = {
+  ["Action №1"] = function() ... end,
+} })
+```
+
+### Integrate with Telescope
+
+```lua
 require("telescope").load_extension("actions")
 ```
 
-### With mini.pick
+### Integrate with mini.pick
 
 ```lua
-local actions = require("actions")
-actions.setup({ actions = actions.stock_actions })
 MiniPick.registry.action_list = require("actions.pickers").action_list
 ```
 
